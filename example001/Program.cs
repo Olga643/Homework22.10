@@ -1,4 +1,9 @@
-﻿int number = GetNumber("Введите пятизначное число");
+﻿// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+// 14212 -> нет
+// 12821 -> да
+// 23432 -> да
+
+
 
 int GetNumber(string msg)
 {
@@ -21,6 +26,8 @@ int GetNumber(string msg)
 
     return result;
 }
+int number = GetNumber("Введите пятизначное число");
+
 int a1 = number % 10;
 int a2 = (number/10) % 10;
 int a4 = (number/1000) % 10;
